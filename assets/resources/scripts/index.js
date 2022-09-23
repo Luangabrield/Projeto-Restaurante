@@ -1,22 +1,37 @@
-var apelido = prompt('digite o apelido que deseja ser tratado aqui: ')
+const porId = function (id){
+    return document.getElementById(id)
+}
+
+document.onload = alert('bem vindo ao nosso site!')
+let apelido = prompt('digite o apelido que deseja ser tratado aqui: ')
 
 setTimeout(function () {
     confirm(`vamos chamar você de ${apelido} :)`);
     alert(`prazer em te conhecer ${apelido}!! Fique a vontade para apreciar nosso menu`);
-}, 2000)    
+}, 500)    
     
-var a = document.querySelector('#prox')
-a.addEventListener('mouseenter',() => {
-    a.style.cursor = 'pointer';
+let botaoCSS = document.querySelector('#prox')
+
+botaoCSS.addEventListener('mouseenter',() => {
+    botaoCSS.style.cursor = 'pointer';
 }); 
 
-a.addEventListener('mouseenter', emCima)
-a.addEventListener('mouseout', sair)
+botaoCSS.addEventListener('mouseenter', emCima)
+botaoCSS.addEventListener('mouseout', sair)
 
 function emCima(){
-    a.style.background = 'red'; 
+    botaoCSS.style.background = 'red'; 
 }
 
 function sair(){
-    a.style.background = 'rgb(71, 5, 5)';
+    botaoCSS.style.background = 'rgb(71, 5, 5)';
 }
+
+setInterval(function() {
+    setTimeout (function(){
+        porId('el').style.color = 'green'
+    }, 1000);
+    setTimeout (function(){
+        porId('el').style.color = 'red'
+    }, 500)
+}, 2000);
