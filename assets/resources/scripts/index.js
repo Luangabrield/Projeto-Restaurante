@@ -37,9 +37,9 @@ function sair(){
 
 setInterval(function() {
     setTimeout (function(){
-        porId(getId()).style.color = 'green'
+        porId(getId()).style.color = 'red'
     }, 1000);
     setTimeout (function(){
-        porId(getId()).style.color = 'red'
+        porId(getId()).style.color = 'green'
     }, 500)
 }, 2000);
