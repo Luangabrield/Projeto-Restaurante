@@ -2,6 +2,10 @@ const porId = function (id){
     return document.getElementById(id)
 }
 
+function getId(){
+    return 'el';
+}
+
 document.onload = alert('bem vindo ao nosso site!')
 let apelido = prompt('digite o apelido que deseja ser tratado aqui: ')
 
@@ -16,8 +20,12 @@ botaoCSS.addEventListener('mouseenter',() => {
     botaoCSS.style.cursor = 'pointer';
 }); 
 
-botaoCSS.addEventListener('mouseenter', emCima)
+(function () {
+    botaoCSS.addEventListener('mouseenter', emCima)
+})();
+
 botaoCSS.addEventListener('mouseout', sair)
+
 
 function emCima(){
     botaoCSS.style.background = 'red'; 
@@ -29,9 +37,9 @@ function sair(){
 
 setInterval(function() {
     setTimeout (function(){
-        porId('el').style.color = 'green'
+        porId(getId()).style.color = 'green'
     }, 1000);
     setTimeout (function(){
-        porId('el').style.color = 'red'
+        porId(getId()).style.color = 'red'
     }, 500)
 }, 2000);
