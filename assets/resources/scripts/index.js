@@ -24,11 +24,11 @@ botaoCSS.addEventListener('mouseenter',() => {
     botaoCSS.addEventListener('mouseenter', emCima)
 })();
 
-botaoCSS.addEventListener('mouseout', sair)
+document.getElementsByTagName('button')[0].addEventListener('mouseout', sair)
 
 
 function emCima(){
-    botaoCSS.style.background = 'red'; 
+    document.getElementsByName('botao')[0].style.background = 'red'; 
 }
 
 function sair(){
