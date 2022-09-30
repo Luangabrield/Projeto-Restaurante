@@ -37,7 +37,7 @@ Eventos
 
 Acesso aos elementos DOM do HTML
 
-- [ ] Via referência DOM pelo id do elemento HTML
+- [x] Via referência DOM pelo id do elemento HTML
 - [x] Via getElementByID()
 - [x] Via getElementsByName()
 - [x] Via getElementsByTagName()
@@ -45,9 +45,9 @@ Acesso aos elementos DOM do HTML
 
 Tratadores de Evento
 
-- [ ] Especificar o tratador de evento inline
-- [ ] Especificar o tratador de evento no carregamento da página HTML no modo tradicional - no onload
-- [ ] Especificar o tratador de evento no carregamento da página HTML com a função addEventListener - no onload
+- [x] Especificar o tratador de evento inline
+- [x] Especificar o tratador de evento no carregamento da página HTML no modo tradicional - no onload
+- [x] Especificar o tratador de evento no carregamento da página HTML com a função addEventListener - no onload
 - [ ] Usar o operador this em funções tratadoras de eventos.
 
 Objetos Nativos
@@ -59,8 +59,8 @@ Objetos Nativos
 
 Objetos
 
-- [ ] Criar objeto usando função construtora ou notação literal  .
-- [ ] Criar objetos a partir da definição de classes do ES6  .
+- [x] Criar objeto usando função construtora ou notação literal  
+- [x] Criar objetos a partir da definição de classes do ES6  
 - [ ] Usar herança prototipal nativa ou herança de classes do ES6
 
 Qualidade do código
@@ -69,7 +69,7 @@ Qualidade do código
 - [ ] Usar um lint - mostrar a correção de pelo menos 5 problemas informados pelo lint (sugerido JSHint - usar o arquivo .jshintrc disponível no moodle)
 - [ ] Usar strict mode
 - [ ] Usar Module Pattern
-- [ ] Usar pasta assets e subpastas resources e libraries para organizar o código
+- [x] Usar pasta assets e subpastas resources e libraries para organizar o código
 - [ ] Usar let ou const ao invés de var
 - [ ] Nomes de arquivos minúsculos e separados por hífen (dashed-case)
 

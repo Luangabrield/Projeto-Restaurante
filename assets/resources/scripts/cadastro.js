@@ -17,7 +17,13 @@ const porId = function (id){
         console.log(pessoa)
     }
 
+    const pessoaModelo = {
+        nome: 'Luan',
+        email: 'emailModelo@gmail.com',
+        telefone: '042994553931'
+    }
 
+    console.log(pessoaModelo)
 
 
 function dentro0(){

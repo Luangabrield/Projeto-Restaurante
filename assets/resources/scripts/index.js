@@ -21,10 +21,11 @@ botaoCSS.addEventListener('mouseenter',() => {
 }); 
 
 (function () {
-    botaoCSS.addEventListener('mouseenter', emCima)
+    prox.addEventListener('mouseenter', emCima)
 })();
 
 document.getElementsByTagName('button')[0].addEventListener('mouseout', sair)
+
 
 
 function emCima(){
