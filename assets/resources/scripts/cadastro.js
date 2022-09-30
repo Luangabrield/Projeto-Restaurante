@@ -2,18 +2,23 @@ const porId = function (id){
     return document.getElementById(id)
 }
 
-(function (){
-    const persons = [];
+
+    const people = [];
 
     porId('cadastro').onsubmit = function(e) {
-        e.preventDefault();
+        e.preventDefault()
 
-        const pessoa = new Person(porId('nome').value, porId('email').value, porId('telefone').value);
+        const pessoa = new Person(
+        porId('nome').value, 
+        porId('email').value, 
+        porId('telefone').value)
 
-        persons.push(pessoa);
-        
-    };
-})();
+        people.push(pessoa)
+        console.log(pessoa)
+    }
+
+
+
 
 function dentro0(){
     document.getElementsByTagName('input')[0].style.border = 'ridge';

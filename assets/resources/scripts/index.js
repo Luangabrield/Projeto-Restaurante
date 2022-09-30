@@ -12,7 +12,7 @@ let apelido = prompt('digite o apelido que deseja ser tratado aqui: ')
 setTimeout(function () {
     confirm(`vamos chamar você de ${apelido} :)`);
     alert(`prazer em te conhecer ${apelido}!! Fique a vontade para apreciar nosso menu`);
-}, 500)    
+}, 200)    
     
 let botaoCSS = document.querySelector('#prox')
 
