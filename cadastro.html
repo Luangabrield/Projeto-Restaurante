@@ -13,21 +13,26 @@
     <header>
         <h1><strong id="el" name="titulo">El</strong> Mexicano</h1>
     </header>
-    <form action="" method="" id="cadastro">
+    <div id="titulo-pagina">
+        <h1>Cadastro de Cliente</h1>
+    </div>    
+    <form action="" method="" id="cadastro" onsubmit = "validaForm()">
         <div>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" onfocus="dentro0()" onblur="fora0()" />
+            <label for="nome" class="espaco-nome">Nome:</label>
+            <input type="text" id="nome" class="nome" onfocus="dentro0()" onblur="fora0()" />
+            <p id="aviso"></p>
         </div>
         <div>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" onfocus="dentro1()" onblur="fora1()"/>
+            <label for="email" class="espaco-email">Email:</label>
+            <input type="email" id="email" onfocus="dentro1()" onblur="fora1()" required name=email/>
         </div>
         <div>
-            <label for="telefone">telefone</label>
-            <input type="number" id="telefone" onfocus="dentro2()" onblur="fora2()"/>
+            <label for="telefone">Telefone:</label>
+            <input type="number" id="telefone" onfocus="dentro2()" onblur="fora2()" title="Preencha o campo Telefone"
+            required />
         </div>
         <div class="button">
-            <button type="submit">Enviar</button>
+            <button type="submit" id="botao">Enviar</button>
         </div>
     </form>
     <script src="assets\resources\scripts\person.js"></script>

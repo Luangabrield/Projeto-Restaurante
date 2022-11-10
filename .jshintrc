@@ -3,7 +3,7 @@
    * ENVIRONMENTS
    * =================
    */
-
+  
   // Define globals exposed by modern browsers.
   "browser": true,
 
@@ -50,7 +50,7 @@
   "undef": true,
 
   // Warn when variables are defined but never used.
-  "unused": true,
+  "unused": false,
 
   /*
    * RELAXING OPTIONS
